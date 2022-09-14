@@ -1,0 +1,51 @@
+package School;
+
+import java.util.Scanner;
+
+public class Student {
+    private int code;
+    private String name;
+    private  int age;
+    private String address;
+    private String project;
+    private int teacherCode;
+    String teacherName;
+
+    public Student() {
+        code = age =0;
+        name = "";
+        address ="";
+        project ="";
+        teacherCode =0;
+        teacherName ="";
+    }
+    public  void setStudentDetails(){
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Enter details about the student:");
+        System.out.println("Enter student code:" );
+        code = input.nextInt();
+        input.nextLine();
+        System.out.println("Enter name:");
+        name = input.nextLine();
+        System.out.println("Enter age:" );
+        age = input.nextInt();
+        input.nextLine();
+        System.out.println("Enter address:");
+        address = input.nextLine();
+        System.out.println("Enter Project: You can type as many lines " + "you wish. Enter 0 to stop.");
+        project = new Scanner(System.in).useDelimiter("0").next();
+    }
+    public void assignTeacher(String name,int code){
+        this.teacherName = name;
+        this.teacherCode = code;
+    }
+    public void getStudentDetails() {
+        System.out.println("The details about the student are:");
+        System.out.println("Code: " + code);
+        System.out.println("Age: " + age);
+        System.out.println("Address: " + address);
+        System.out.println("Project: " + project);
+        System.out.print("Teacher attending the student: " + teacherName);
+    }
+}

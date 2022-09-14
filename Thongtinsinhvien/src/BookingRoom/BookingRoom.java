@@ -5,7 +5,7 @@ public class BookingRoom {
     Time CheckInTime;
     byte noOfRooms;
     double totalPrice;
-    byte typeOfRoom;
+     byte typeOfRoom;
     public BookingRoom() {
 
         CheckInDate = new Date();
