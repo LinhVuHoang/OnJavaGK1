@@ -35,4 +35,9 @@ public class Circle extends Shape{
                 "radius=" + radius +
                 '}';
     }
+
+    @Override
+    public boolean getSide() {
+        return false;
+    }
 }

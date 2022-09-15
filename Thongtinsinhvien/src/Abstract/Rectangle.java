@@ -6,6 +6,9 @@ public class Rectangle extends Shape{
 
     public Rectangle() {
     }
+    public Rectangle(double width) {
+        this.width = width;
+    }
 
     public Rectangle(double width, double length) {
         this.width = width;
@@ -50,5 +53,10 @@ public class Rectangle extends Shape{
                 "width=" + width +
                 ", length=" + length +
                 '}';
+    }
+
+    @Override
+    public boolean getSide() {
+        return false;
     }
 }

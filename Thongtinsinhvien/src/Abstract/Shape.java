@@ -4,8 +4,7 @@ public abstract class Shape {
     private String color;
     private boolean filled;
 
-    public Shape() {
-    }
+    public Shape() {}
 
     public Shape(String color, boolean filled) {
         this.color = color;
@@ -30,4 +29,6 @@ public abstract class Shape {
     abstract double getArea();
     abstract double getPerimeter();
     public  abstract  String toString();
+
+    public abstract boolean getSide();
 }
